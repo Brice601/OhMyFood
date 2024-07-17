@@ -1,0 +1,22 @@
+/* Design System */
+
+:root {
+    /* Colors */
+    --first-color: #9356DC;
+    --second-color: #FF79DA;
+    --third-color: #99E2D0;
+
+    /* Text configuration */
+    --body-font: 'Roboto';
+    --title-font: 'Shrikhand';
+
+    --title-section-font-size: 1.5rem; /*24px*/
+    --body-font-size: 1.13rem; /*18px*/
+    --button-font-size: 1rem; /*16px*/
+    --price-font-size: 0.94rem; /*15px*/
+
+    --bold-font-weight: 700;
+    --medium-font-weight: 500;
+    --light-font-weight: 300;
+
+}
