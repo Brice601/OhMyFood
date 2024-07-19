@@ -1,0 +1,49 @@
+@import "../main.scss";
+@import "responsive.scss";
+
+        /*** reserve menu ***/
+
+.reserve-menu {
+    text-align: center;
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+.reserve-menu div{
+    background-color: $background;
+    // display: inline-flex;
+    // flex-direction: column;
+    // width: 80%;
+    font-family: $body-font;
+    // justify-content: center;
+    // align-items: center;
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+    & p {
+        font-size: $body-font-size;
+        font-weight: $light-font-weight;
+        background-color: aquamarine;
+    }
+
+    & h1 {
+        font-size: $title-section-font-size;
+        font-weight: $bold-font-weight;
+        background-color: aquamarine;
+    }
+
+    & a {
+        color: $color-white;
+        font-size: $button-font-size;
+        font-weight: $medium-font-weight;
+        padding: 13px 18px 13px 18.75px;
+        border-radius: 30px;
+        background: linear-gradient(to top, $primary, $secondary);
+        text-decoration: none;
+        @include shadow-box;
+        height: 50px;
+        width: 218px;
+    }
+
+}
+

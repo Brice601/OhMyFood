@@ -1,20 +1,18 @@
-@import "responsive.scss";
+@import "./responsive.scss";
 @import "../main.scss";
 
-.first-nav {
-    & a {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        display: none;
-    }
+header {
+    padding-top: $padding;
+}
 
-    & .logo {
+.first-nav {
+    padding-bottom: $padding;
+
+    & img {
         height: 36px;
         display: block;
         margin: 0px auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: $padding;
     }
 
 }
@@ -23,11 +21,10 @@
     background: linear-gradient(to top, rgba(214, 214, 214, 0.158), rgba(163, 160, 160, 0.322));
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: $padding + 3px;
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 3.13rem;
     box-shadow: 1px 5px 5px rgba(139, 139, 139, 0.877);
 
     & img {

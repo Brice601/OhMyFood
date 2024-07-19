@@ -1,3 +1,37 @@
-.test {
-  background-color: aquamarine;
-}/*# sourceMappingURL=Menu.css.map */
+@charset "UTF-8";
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: green;
+}
+
+/**** Header ****/
+header {
+  padding-top: 14px;
+}
+
+nav {
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+nav div {
+  text-align: center;
+}
+nav .logo {
+  height: 36px;
+  padding-top: 2px;
+}
+nav a {
+  position: absolute;
+  padding-top: 7px;
+  padding-left: 23px;
+}
+
+/**** Hero Header image ****/
+/**** La palette du goût ****//*# sourceMappingURL=Menu.css.map */

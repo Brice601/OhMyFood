@@ -1,19 +1,36 @@
-// @import "../modules/header.scss";
-// @import "../modules/responsive.scss";
-// @import "../main.scss";
+@import "../main.scss";
+@import "../modules/responsive.scss";
 
-// .first-nav {
-//     & a {
-//         visibility: visible;
-//     }
-
-// }
-
-// .second-nav {
-//     display: none;
-// }
-
-
-.test {
-    background-color: aquamarine;
+/**** Header ****/
+header {
+    padding-top: $padding;
+    // background-color: azure;
 }
+
+nav {
+    padding-top: $padding - 2;
+    padding-bottom: $padding - 1;
+    // background-color: aquamarine;
+
+    & div {
+        text-align: center;
+        // background-color: bisque;
+    }
+
+    & .logo {
+        height: 36px;
+        padding-top: 2px;
+    }
+
+    & a {
+        position: absolute;
+        padding-top: 7px;
+        padding-left: 17px + 6px;
+    }
+}
+
+/**** Hero Header image ****/
+
+
+
+/**** La palette du goût ****/
