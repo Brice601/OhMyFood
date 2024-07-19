@@ -47,4 +47,68 @@
 }
 
         /*** Fonctionnement ***/
+.functioning > div {
+    padding-top: 26px;
+    padding-bottom: 101px;
+}
+
+.functioning h2 {
+    padding-top: 15px;
+}
+
+.functioning_elements, .functioning_items, .functioning_number{
+    display: flex;
+    align-items: baseline;
+}
+
+.functioning_elements {
+    position: relative;
+    padding-bottom: 25px;
+
+}
+
+.functioning_number {
+    width: 24px;
+    height: 24px;
+    background-color: $primary;
+    color: $color-white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90%;
+    // position: relative;
+    z-index: 2;
+    margin-left: 20px;
+
+    & p {
+        font-size: 14.18px;
+        padding-top: 3px;
+    }
+}
+
+.functioning_items {
+    gap: 27px;
+    background-color: $background;
+    border-radius: 15px;
+    padding-left: 34px;
+    padding-right: 38px;
+    width: 70%;
+    z-index: 1;
+    margin-right: 20px;
+    margin-left: -12.51px;
+    @include shadow-box;
+    height: 72px;
+
+    & p {
+        font-weight: $medium-font-weight;
+        font-size: $button-font-size;
+        padding-top: 10px;
+    }
+
+    & img {
+        width: 18px;
+        height: 18px;
+    }
+    
+}
+
 

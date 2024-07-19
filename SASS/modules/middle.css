@@ -9,6 +9,13 @@ body {
   margin: 0;
   min-width: 340px;
   background-color: white;
+  font-family: "Roboto";
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 /*** réservez le menu qui vous convient ***/
@@ -51,4 +58,61 @@ body {
   width: 218px;
 }
 
-/*** Fonctionnement ***//*# sourceMappingURL=middle.css.map */
+/*** Fonctionnement ***/
+.functioning > div {
+  padding-top: 26px;
+  padding-bottom: 101px;
+}
+
+.functioning h2 {
+  padding-top: 15px;
+}
+
+.functioning_elements, .functioning_items, .functioning_number {
+  display: flex;
+  align-items: baseline;
+}
+
+.functioning_elements {
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.functioning_number {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 90%;
+  z-index: 2;
+  margin-left: 20px;
+}
+.functioning_number p {
+  font-size: 14.18px;
+  padding-top: 3px;
+}
+
+.functioning_items {
+  gap: 27px;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  padding-left: 34px;
+  padding-right: 38px;
+  width: 70%;
+  z-index: 1;
+  margin-right: 20px;
+  margin-left: -12.51px;
+  box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
+  height: 72px;
+}
+.functioning_items p {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.functioning_items img {
+  width: 18px;
+  height: 18px;
+}/*# sourceMappingURL=middle.css.map */
