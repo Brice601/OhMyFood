@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colors */
 /* Text configuration */
 /*24px*/
@@ -7,31 +8,35 @@
 body {
   margin: 0;
   min-width: 340px;
-  background-color: green;
+  background-color: white;
 }
 
-/*** reserve menu ***/
+/*** réservez le menu qui vous convient ***/
 .reserve-menu {
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  background-color: #F6F6F6;
 }
 
 .reserve-menu div {
-  background-color: #F6F6F6;
   font-family: "Roboto";
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-bottom: 90px;
+  padding-top: 39.5px;
 }
 .reserve-menu div p {
   font-size: 1.13rem;
   font-weight: 300;
-  background-color: aquamarine;
+  margin-right: 26px;
+  margin-left: 34px;
+  margin-top: 0px;
+  margin-bottom: 27px;
 }
 .reserve-menu div h1 {
   font-size: 1.5rem;
   font-weight: 700;
-  background-color: aquamarine;
+  margin-left: 42px;
+  margin-right: 58px;
+  margin-bottom: 5px;
+  padding-bottom: 14px;
 }
 .reserve-menu div a {
   color: white;
@@ -44,4 +49,6 @@ body {
   box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
   height: 50px;
   width: 218px;
-}/*# sourceMappingURL=middle.css.map */
+}
+
+/*** Fonctionnement ***//*# sourceMappingURL=middle.css.map */
