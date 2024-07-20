@@ -3,4 +3,53 @@
 
 footer {
     background-color: #353535;
+    color: $color-white;
+
+    & > div {
+        padding-left: 25px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        margin: 0;
+        display: inline-flex;
+        flex-direction: column;
+
+        & a {
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+}
+
+.site-name {
+    font-family: $title-font;
+    font-size: $body-font-size;
+    margin: 0;
+    padding-bottom: 16px;
+
+}
+
+.site-name_item {
+    margin-bottom: 7px;
+
+    & div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 19px;
+    }
+
+    & img {
+        height: 13px;
+        width: 11px;
+        padding-right: 11px;   
+    }
+   
+    
+    // & p {
+    //     background-color: rosybrown;
+
+    // }
+
+
+
 }
