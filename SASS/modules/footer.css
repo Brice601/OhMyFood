@@ -1,1 +1,24 @@
-/*# sourceMappingURL=footer.css.map */
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: white;
+  font-family: "Roboto";
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+footer {
+  background-color: #353535;
+}/*# sourceMappingURL=footer.css.map */
