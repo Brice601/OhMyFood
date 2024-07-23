@@ -26,23 +26,23 @@
         font-weight: $bold-font-weight;
         margin-left: 42px;
         margin-right: 58px;
-        
         margin-bottom: 5px;
         padding-bottom: $padding;
     }
 
     & a {
-        color: $color-white;
-        font-size: $button-font-size;
-        font-weight: $medium-font-weight;
         padding: 13px 18px 13px 18.75px;
-        border-radius: 30px;
-        background: linear-gradient(to top, $primary, $secondary);
         text-decoration: none;
+        @include button-items;
         @include shadow-box;
         height: 50px;
         width: 218px;
     }
+
+    & a:hover {
+            background: linear-gradient(to top, lighten($primary, 5%), lighten($secondary, 5%));
+            box-shadow: 1px 2px 7px darken(rgba(133, 132, 132, 0.87), 30%);
+        }
 
 }
 
@@ -139,6 +139,10 @@
     // z-index: 2;
     position: relative;
     overflow: hidden;
+
+    & a {
+        color: black;
+    }
 }
 
 .restaurant_items {
@@ -165,6 +169,7 @@
         position: absolute;
         right: 15px;
         top: 5px;
+        color: black;
         // z-index: 3;
     }
 }
@@ -173,10 +178,11 @@
 .restaurant_elements {
 
     & img {
-        position: absolute;
+        position: relative;
         top: 197px;
         right: 25px;
-        // z-index: 4; 
+        // z-index: 4;
+    
     }
     
     // & img:active {               /*** animation ? ***/

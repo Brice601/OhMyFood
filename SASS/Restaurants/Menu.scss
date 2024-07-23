@@ -41,4 +41,114 @@ nav {
 }
 
 
-/**** La palette du goût ****/
+/**** Restaurant menu ****/
+.restaurant-menu {
+    background-color: $background;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    top: -36px;
+
+    & .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    & button {
+        border: none;
+        padding: 16px 48px 15px 49px;
+        @include button-items;
+        @include shadow-box;
+        margin-top: 40px - $padding - 13px;
+        margin-bottom: 40px;
+    }
+
+    & button:hover {
+        background: linear-gradient(to top, lighten($primary, 5%), lighten($secondary, 5%));
+        box-shadow: 1px 2px 7px darken(rgba(133, 132, 132, 0.87), 30%);
+    }
+}
+
+h1 {
+    font-size: 28px;
+    font-family: $title-font;
+    font-weight: 400;
+}
+
+.menu_title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 41px;
+    
+    // background-color: red;
+}
+
+.menu {
+    // background-color: aquamarine;
+    padding: 13px;
+    margin-bottom: $padding;
+
+    & > p {
+        margin: 0;
+        font-size: $button-font-size;
+        font-weight: $light-font-weight;
+        padding-bottom: 9px;    
+        text-transform: uppercase;
+    }
+
+    & hr {
+        border: 2px solid $tertiary;
+        width: 40px;
+        position: relative;
+        margin: 0;
+    }
+    
+}
+
+.menu_items {
+    background-color: $color-white;
+    border-radius: 15px;
+    height: 100%;
+    padding-left: 15px;
+    padding-right: 47px;
+    position: relative;
+    @include shadow-box;
+    margin-top: 12px;
+
+    & .title {
+        font-size: $body-font-size;
+        font-weight: $medium-font-weight;
+        padding-top: 12px;
+        padding-bottom: 5px;
+        // background-color: violet;
+        margin: 0;
+    }
+
+    & .subtitle {
+        font-size: $price-font-size;
+        font-weight: $light-font-weight;
+        padding-bottom: 12px;
+        // background-color: rosybrown;
+        margin: 0;
+    }
+
+    & .price {
+        font-size: $price-font-size;
+        font-weight: $bold-font-weight;
+        position: absolute;
+        right: 13.5px;
+        bottom: -13.5px;
+        padding-bottom: 12px;
+    }
+
+    // & div {
+    //     // display: flex;
+    //     // flex-direction: column;
+    //     background-color: yellow;
+    //     margin: 13px 47px 13px 15px;
+    //     height: 69px;
+
+    // }
+}
+

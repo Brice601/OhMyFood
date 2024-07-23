@@ -25,10 +25,18 @@ $padding: 14px;
     box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
 }
 
+@mixin button-items {
+    background: linear-gradient(to top, $primary, $secondary);
+    border-radius: 30px;
+    color: $color-white;
+    font-size: $button-font-size;
+    font-weight: $medium-font-weight;
+}
+
 body {
     margin: 0;
     min-width: 340px;
-    background-color: white;
+    background-color: rgb(241, 250, 159);
     font-family: $body-font;
 }
 

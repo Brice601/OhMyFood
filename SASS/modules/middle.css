@@ -8,7 +8,7 @@
 body {
   margin: 0;
   min-width: 340px;
-  background-color: white;
+  background-color: rgb(241, 250, 159);
   font-family: "Roboto";
 }
 
@@ -48,16 +48,20 @@ h2 {
   padding-bottom: 14px;
 }
 .reserve-menu div a {
+  padding: 13px 18px 13px 18.75px;
+  text-decoration: none;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 30px;
   color: white;
   font-size: 1rem;
   font-weight: 500;
-  padding: 13px 18px 13px 18.75px;
-  border-radius: 30px;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  text-decoration: none;
   box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
   height: 50px;
   width: 218px;
+}
+.reserve-menu div a:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 1px 2px 7px rgba(56, 56, 56, 0.87);
 }
 
 /*** Fonctionnement ***/
@@ -143,6 +147,9 @@ h2 {
   position: relative;
   overflow: hidden;
 }
+.restaurant a {
+  color: black;
+}
 
 .restaurant_items img {
   width: 100%;
@@ -164,12 +171,31 @@ h2 {
   position: absolute;
   right: 15px;
   top: 5px;
+  color: black;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.restaurant_elements {
+  overflow: hidden;
+}
 .restaurant_elements img {
   position: absolute;
   top: 197px;
   right: 25px;
+}
+.restaurant_elements img:hover {
+  animation: gradient 15s ease;
+  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
 }
 .restaurant_elements .title {
   font-weight: 700;
