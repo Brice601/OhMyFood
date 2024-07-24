@@ -92,6 +92,17 @@ h1 {
   justify-content: space-between;
   padding-left: 17px;
   padding-right: 41px;
+  align-items: center;
+}
+.menu_title .heart-svg {
+  transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke-opacity: 1;
+}
+.menu_title .heart-svg:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
 }
 
 @keyframes slide-in {
@@ -144,6 +155,7 @@ h1 {
   position: relative;
   box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
   margin-top: 12px;
+  overflow: hidden;
 }
 .menu_items .title {
   font-size: 1.13rem;
@@ -166,7 +178,29 @@ h1 {
   bottom: -13.5px;
   padding-bottom: 12px;
 }
-.menu_items:active {
-  background-color: aqua;
-  padding-right: 59px;
+.menu_items .add {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 59px;
+  position: absolute;
+  right: -59px;
+  top: 0px;
+}
+.menu_items .add__circle {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 19.42px;
+  top: 35%;
+}
+.menu_items:active .price, .menu_items:active .add {
+  transform: translateX(-59px);
+  transition: transform 500ms ease-in-out;
+}
+.menu_items:active .title, .menu_items:active .subtitle {
+  transition: padding-right 500ms ease-in-out;
+  padding-right: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=Menu.css.map */

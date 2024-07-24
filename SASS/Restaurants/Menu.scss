@@ -80,8 +80,25 @@ h1 {
     justify-content: space-between;
     padding-left: 17px;
     padding-right: 41px;
+    align-items: center;
     
     // background-color: red;
+
+    & .heart-svg {
+        // position: absolute;
+        // top: 197px;
+        // right: 25px;
+        transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in ;
+        fill: url(#gradient);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+
+        &:hover {
+            fill-opacity: 1;
+            stroke-opacity: 0;
+        }
+
+    }
 }
 
 // @for $i from 1 through 3 {
@@ -147,7 +164,8 @@ h1 {
     position: relative;
     @include shadow-box;
     margin-top: 12px;
-    // animation: slide-in 2s ease-in-out;
+    overflow: hidden;
+
 
     & .title {
         font-size: $body-font-size;
@@ -156,6 +174,9 @@ h1 {
         padding-bottom: 5px;
         // background-color: violet;
         margin: 0;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
     }
 
     & .subtitle {
@@ -164,7 +185,9 @@ h1 {
         padding-bottom: 12px;
         // background-color: rosybrown;
         margin: 0;
-        // animation: slide-in 4s;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
     }
 
     & .price {
@@ -174,21 +197,41 @@ h1 {
         right: 13.5px;
         bottom: -13.5px;
         padding-bottom: 12px;
-        // animation: slide-in 1s;
     }
 
-    // & div {
-    //     // display: flex;
-    //     // flex-direction: column;
-    //     background-color: yellow;
-    //     margin: 13px 47px 13px 15px;
-    //     height: 69px;
+    & .add {
+        background-color: $tertiary;
+        height: 100%;
+        width: 59px;
+        position: absolute;
+        right: -59px;
+        top: 0px;
 
-    // }
+
+        &__circle {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 19.42px;
+            top: 35%;
+        }
+    }
 
     &:active {
-        background-color: aqua;
-        padding-right: 59px;
+        
+        & .price, .add {
+            transform: translateX(-59px);
+            transition: transform 500ms ease-in-out;
+        }
+
+        & .title, .subtitle {
+            transition: padding-right 500ms ease-in-out;
+            padding-right: 70px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
     }
 }
 
