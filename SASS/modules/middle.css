@@ -174,28 +174,18 @@ h2 {
   color: black;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.restaurant_elements {
-  overflow: hidden;
-}
-.restaurant_elements img {
+.restaurant_elements .heart-svg {
   position: absolute;
   top: 197px;
   right: 25px;
+  transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke-opacity: 1;
 }
-.restaurant_elements img:hover {
-  animation: gradient 15s ease;
-  background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+.restaurant_elements .heart-svg:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
 }
 .restaurant_elements .title {
   font-weight: 700;

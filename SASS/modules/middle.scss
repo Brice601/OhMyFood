@@ -174,20 +174,23 @@
     }
 }
 
-
 .restaurant_elements {
 
-    & img {
-        position: relative;
+    & .heart-svg {
+        position: absolute;
         top: 197px;
         right: 25px;
-        // z-index: 4;
-    
+        transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in ;
+        fill: url(#gradient);
+        fill-opacity: 0;
+        stroke-opacity: 1;
+
+        &:hover {
+            fill-opacity: 1;
+            stroke-opacity: 0;
+        }
+
     }
-    
-    // & img:active {               /*** animation ? ***/
-    //         background: linear-gradient(to bottom, $primary, $secondary);
-    //     }
 
     & .title {
         font-weight: $bold-font-weight;

@@ -1,0 +1,108 @@
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: rgb(241, 250, 159);
+  font-family: "Roboto";
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+body {
+  background-color: #e8f9f5;
+}
+
+.lds-grid,
+.lds-grid div {
+  box-sizing: border-box;
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 5vw;
+  height: 8vh;
+  border-radius: 50%;
+  background: linear-gradient(to right, #782cd3, #fface8);
+  animation: lds-grid 3s linear;
+}
+
+.lds-grid div:nth-child(1) {
+  top: 35vh;
+  left: 35vw;
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  top: 35vh;
+  left: 50vw;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  top: 35vh;
+  left: 65vw;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+  top: 35vh;
+  left: 35vw;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+  top: 35vh;
+  left: 50vw;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+  top: 35vh;
+  left: 65vw;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+  top: 35vh;
+  left: 35vw;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+  top: 35vh;
+  left: 50vw;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+  top: 35vh;
+  left: 65vw;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=loader.css.map */

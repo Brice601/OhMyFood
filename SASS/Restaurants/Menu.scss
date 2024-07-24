@@ -84,6 +84,36 @@ h1 {
     // background-color: red;
 }
 
+// @for $i from 1 through 3 {
+//     .slide-delay-#{$i} {
+//         padding-left: 100% * $i;
+//     }
+// }
+
+@keyframes slide-in {
+    from {
+        padding-left: 100%;
+        width: 200%;
+    }
+
+    to {
+        padding-right: 13px;
+    }
+}
+
+.slide-delay-1{
+    animation: slide-in 0.75s cubic-bezier(.45,.05,.55,.95) 100ms;
+}
+
+.slide-delay-2{
+    animation: slide-in 2s ease-in-out 650ms;
+}
+
+.slide-delay-3{
+    animation: slide-in 1.2s ease-in 350ms;
+}
+
+
 .menu {
     // background-color: aquamarine;
     padding: 13px;
@@ -95,6 +125,7 @@ h1 {
         font-weight: $light-font-weight;
         padding-bottom: 9px;    
         text-transform: uppercase;
+        animation: slide-in 2.5s cubic-bezier(.45,.05,.55,.95);
     }
 
     & hr {
@@ -102,6 +133,7 @@ h1 {
         width: 40px;
         position: relative;
         margin: 0;
+        animation: slide-in 3s cubic-bezier(.68,-0.55,.27,1.55);
     }
     
 }
@@ -115,6 +147,7 @@ h1 {
     position: relative;
     @include shadow-box;
     margin-top: 12px;
+    // animation: slide-in 2s ease-in-out;
 
     & .title {
         font-size: $body-font-size;
@@ -131,6 +164,7 @@ h1 {
         padding-bottom: 12px;
         // background-color: rosybrown;
         margin: 0;
+        // animation: slide-in 4s;
     }
 
     & .price {
@@ -140,6 +174,7 @@ h1 {
         right: 13.5px;
         bottom: -13.5px;
         padding-bottom: 12px;
+        // animation: slide-in 1s;
     }
 
     // & div {
@@ -150,5 +185,10 @@ h1 {
     //     height: 69px;
 
     // }
+
+    &:active {
+        background-color: aqua;
+        padding-right: 59px;
+    }
 }
 
