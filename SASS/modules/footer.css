@@ -5,9 +5,8 @@
 /*16px*/
 /*15px*/
 body {
-  margin: 0;
   min-width: 340px;
-  background-color: rgb(241, 250, 159);
+  background-color: white;
   font-family: "Roboto";
 }
 
@@ -22,18 +21,39 @@ h2 {
 footer {
   background-color: #353535;
   color: white;
-}
-footer > div {
-  padding-left: 25px;
   padding-top: 22px;
   padding-bottom: 22px;
-  margin: 0;
-  display: inline-flex;
+  padding-left: 25px;
+  display: flex;
   flex-direction: column;
 }
-footer > div a {
+@media only screen and (min-width: 1100px) {
+  footer {
+    flex-direction: row-reverse;
+    height: 114px;
+    padding: 0;
+    align-items: last baseline;
+  }
+}
+footer div {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1100px) {
+  footer div {
+    flex-direction: row;
+  }
+}
+footer div a {
   text-decoration: none;
   color: white;
+}
+@media only screen and (min-width: 1100px) {
+  footer div .space {
+    width: 130px;
+    padding-right: 7px;
+  }
 }
 
 .site-name {
@@ -41,6 +61,13 @@ footer > div a {
   font-size: 1.13rem;
   margin: 0;
   padding-bottom: 16px;
+}
+@media only screen and (min-width: 1100px) {
+  .site-name {
+    padding-bottom: 30px;
+    padding-right: 26.42px;
+    width: 139px;
+  }
 }
 
 .site-name_item {
@@ -51,6 +78,13 @@ footer > div a {
   flex-direction: row;
   align-items: center;
   height: 19px;
+}
+@media only screen and (min-width: 1100px) {
+  .site-name_item div {
+    padding-bottom: 0;
+    padding-right: 7px;
+    width: 190px;
+  }
 }
 .site-name_item img {
   height: 13px;

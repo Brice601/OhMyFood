@@ -6,9 +6,8 @@
 /*16px*/
 /*15px*/
 body {
-  margin: 0;
   min-width: 340px;
-  background-color: rgb(241, 250, 159);
+  background-color: white;
   font-family: "Roboto";
 }
 
@@ -24,12 +23,17 @@ h2 {
 .reserve-menu {
   text-align: center;
   background-color: #F6F6F6;
+  padding-top: 1px;
+  padding-bottom: 90px;
+}
+@media only screen and (min-width: 1100px) {
+  .reserve-menu {
+    padding-bottom: 33px;
+  }
 }
 
 .reserve-menu div {
   font-family: "Roboto";
-  padding-bottom: 90px;
-  padding-top: 39.5px;
 }
 .reserve-menu div p {
   font-size: 1.13rem;
@@ -39,15 +43,33 @@ h2 {
   margin-top: 0px;
   margin-bottom: 27px;
 }
+@media only screen and (min-width: 1100px) {
+  .reserve-menu div p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    height: 46px;
+  }
+}
 .reserve-menu div h1 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-left: 42px;
   margin-right: 58px;
-  margin-bottom: 5px;
-  padding-bottom: 14px;
+  margin-bottom: 0px;
+  height: 68px;
+}
+@media only screen and (min-width: 1100px) {
+  .reserve-menu div h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    height: auto;
+  }
 }
 .reserve-menu div a {
+  display: inline-block;
   padding: 13px 18px 13px 18.75px;
   text-decoration: none;
   background: linear-gradient(to top, #9356DC, #FF79DA);
@@ -56,8 +78,8 @@ h2 {
   font-size: 1rem;
   font-weight: 500;
   box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
-  height: 50px;
-  width: 218px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .reserve-menu div a:hover {
   background: linear-gradient(to top, #a16be0, #ff93e1);
@@ -69,19 +91,36 @@ h2 {
   padding-top: 26px;
   padding-bottom: 76px;
 }
+@media only screen and (min-width: 1100px) {
+  .functioning > div {
+    padding: 0px 180px 50px 180px;
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 .functioning h2 {
   padding-top: 15px;
 }
+@media only screen and (min-width: 1100px) {
+  .functioning h2 {
+    padding: 50px 180px 25px 180px;
+  }
+}
 
 .functioning_elements, .functioning_items, .functioning_number {
   display: flex;
-  align-items: baseline;
+  align-items: first baseline;
 }
 
 .functioning_elements {
   position: relative;
   padding-bottom: 25px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning_elements {
+    padding: 0;
+  }
 }
 
 .functioning_number {
@@ -94,6 +133,11 @@ h2 {
   border-radius: 90%;
   z-index: 2;
   margin-left: 20px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning_number {
+    margin-left: 0;
+  }
 }
 .functioning_number p {
   font-size: 14.18px;
@@ -113,6 +157,11 @@ h2 {
   box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
   height: 72.38px;
 }
+@media only screen and (min-width: 1100px) {
+  .functioning_items {
+    margin-right: 36.5px;
+  }
+}
 .functioning_items p {
   font-weight: 500;
   font-size: 1rem;
@@ -131,11 +180,36 @@ h2 {
 .restaurants--background h2 {
   padding-bottom: 22px;
 }
+@media only screen and (min-width: 1100px) {
+  .restaurants--background {
+    padding-bottom: 30px;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-top: 30px;
+  }
+  .restaurants--background h2 {
+    padding-left: 0;
+    padding-bottom: 28px;
+  }
+}
 
 .restaurants, .restaurants_semi {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .restaurants {
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .restaurants_semi {
+    flex-direction: row;
+    gap: 100px;
+  }
 }
 
 .restaurant {
@@ -149,6 +223,11 @@ h2 {
 }
 .restaurant a {
   color: black;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurant {
+    width: 100%;
+  }
 }
 
 .restaurant_items img {
@@ -171,7 +250,6 @@ h2 {
   position: absolute;
   right: 15px;
   top: 5px;
-  color: black;
 }
 
 .restaurant_elements .heart-svg {
