@@ -1,4 +1,4 @@
-
+@import "../SASS/modules/responsive.scss";
 
 /* Colors */
 $primary: #9356DC;
@@ -38,6 +38,10 @@ body {
     min-width: 340px;
     background-color: $color-white;
     font-family: $body-font;
+
+    @media #{$large-up} {
+        margin: 0;
+    }
 }
 
 h2 {

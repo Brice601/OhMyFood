@@ -9,6 +9,11 @@ body {
   background-color: white;
   font-family: "Roboto";
 }
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+  }
+}
 
 h2 {
   padding-left: 20px;
@@ -50,6 +55,11 @@ nav a {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media only screen and (min-width: 1100px) {
+  .restaurant-image img {
+    height: 383px;
+  }
+}
 
 /**** Restaurant menu ****/
 .restaurant-menu {
@@ -58,6 +68,14 @@ nav a {
   border-top-right-radius: 30px;
   position: relative;
   top: -36px;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurant-menu {
+    margin-left: 193px;
+    margin-right: 193px;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
 }
 .restaurant-menu .button {
   display: flex;
@@ -92,6 +110,13 @@ h1 {
   padding-left: 17px;
   padding-right: 41px;
   align-items: center;
+}
+@media only screen and (min-width: 1100px) {
+  .menu_title {
+    justify-content: center;
+    gap: 24px;
+    padding-top: 37px;
+  }
 }
 .menu_title .heart-svg {
   transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
