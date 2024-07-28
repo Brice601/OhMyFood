@@ -19,14 +19,14 @@ body {
         font-family: $title-font;
         // background-color: red;
         background: linear-gradient(to right, $primary, $secondary);
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
     }
 }
 
 .anim {
-    animation: anim 3s ease-in-out forwards;
+    animation: loader-anim 3s ease-in-out forwards;
 
     &__items {
        transition: rotate 2s; 
@@ -34,7 +34,7 @@ body {
     }
 }
 
-@keyframes anim {
+@keyframes loader-anim {
     0% {
         scale: 0.1;
         transform: translateX(-30vw);
