@@ -5,6 +5,7 @@
 /*16px*/
 /*15px*/
 body {
+  margin: 0;
   min-width: 340px;
   background-color: white;
   font-family: "Roboto";

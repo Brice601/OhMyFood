@@ -69,8 +69,7 @@ body p {
   animation: loader-anim 3s ease-in-out forwards;
 }
 .anim__items {
-  transition: rotate 2s;
-  rotate: -360deg;
+  animation: rotation 2s;
 }
 
 @keyframes loader-anim {
@@ -86,5 +85,13 @@ body p {
   100% {
     transform: translateX(100vw);
     opacity: 0.7;
+  }
+}
+@keyframes rotation {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: -360deg;
   }
 }/*# sourceMappingURL=loader3.css.map */
