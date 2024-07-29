@@ -1,7 +1,5 @@
-@import "../main.scss";
 
-
-body {
+#loader-animation {
     background-color: $color-white;
     margin: 0;
     padding: 0;
@@ -19,7 +17,7 @@ body {
         font-family: $title-font;
         // background-color: red;
         background: linear-gradient(to right, $primary, $secondary);
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
         
     }
@@ -61,7 +59,21 @@ body {
     }
 }
 
+// body {
+
+//     & #loader-animation {
+//         animation: affichage 3s forwards;
+//     }
+// }
 
 
+// @keyframes affichage {
+//     0%, 99% {
+//         opacity: 1;
+//         // background-color: red;
+//     }
 
-
+//     100% {
+//         opacity: 0;
+//     }
+// }

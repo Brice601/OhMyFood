@@ -1,5 +1,8 @@
-@import "../main.scss";
-@import "../modules/responsive.scss";
+$color-white: white;
+$large: 1100px!default;
+$large-up: "only screen and (min-width: #{$large})";
+$title-font: 'Shrikhand';
+$body-font-size: 1.13rem; /*18px*/
 
 footer {
     background-color: #353535;
