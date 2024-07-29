@@ -50,6 +50,19 @@
             display: none;
         }
     }
+<<<<<<< HEAD
+=======
+}
+
+@keyframes rotation {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: -360deg;
+    }
+>>>>>>> 278bc27 (chgt transition rotate -> animation rotate)
 }
 
 @keyframes rotation {

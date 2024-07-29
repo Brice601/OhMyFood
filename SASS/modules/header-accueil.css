@@ -1,0 +1,58 @@
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: white;
+  font-family: "Roboto";
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+  }
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+header {
+  padding-top: 14px;
+}
+
+.first-nav {
+  padding-bottom: 14px;
+}
+.first-nav img {
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 14px;
+}
+
+.second-nav {
+  background: linear-gradient(to top, rgba(214, 214, 214, 0.158), rgba(163, 160, 160, 0.322));
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 5px 5px rgba(112, 112, 112, 0.877);
+}
+.second-nav img {
+  height: 1rem;
+}
+.second-nav p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+}/*# sourceMappingURL=header-accueil.css.map */
