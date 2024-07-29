@@ -1,0 +1,705 @@
+@charset "UTF-8";
+/*18px*/
+footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1100px) {
+  footer {
+    flex-direction: row-reverse;
+    height: 114px;
+    padding: 0;
+    align-items: last baseline;
+  }
+}
+footer div {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1100px) {
+  footer div {
+    flex-direction: row;
+  }
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-width: 1100px) {
+  footer div .space {
+    width: 130px;
+    padding-right: 7px;
+  }
+}
+
+.site-name {
+  font-family: "Shrikhand";
+  font-size: 1.13rem;
+  margin: 0;
+  padding-bottom: 16px;
+}
+@media only screen and (min-width: 1100px) {
+  .site-name {
+    padding-bottom: 30px;
+    padding-right: 26.42px;
+    width: 139px;
+  }
+}
+
+.site-name_item {
+  margin-bottom: 7px;
+}
+.site-name_item div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 19px;
+}
+@media only screen and (min-width: 1100px) {
+  .site-name_item div {
+    padding-bottom: 0;
+    padding-right: 7px;
+    width: 190px;
+  }
+}
+.site-name_item img {
+  height: 13px;
+  width: 11px;
+  padding-right: 11px;
+}
+
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: white;
+  font-family: "Roboto";
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+  }
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+header {
+  padding-top: 14px;
+}
+
+.first-nav {
+  padding-bottom: 14px;
+}
+.first-nav img {
+  height: 36px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 14px;
+}
+
+.second-nav {
+  background: linear-gradient(to top, rgba(214, 214, 214, 0.158), rgba(163, 160, 160, 0.322));
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 5px 5px rgba(112, 112, 112, 0.877);
+}
+.second-nav img {
+  height: 1rem;
+}
+.second-nav p {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+#loader-animation {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+#loader-animation > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#loader-animation p {
+  font-size: 4.5rem;
+  font-family: "Shrikhand";
+  background: linear-gradient(to right, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.anim {
+  animation: loader-anim 3s ease-in-out forwards;
+}
+.anim__items {
+  animation: rotation 2s;
+}
+
+@keyframes loader-anim {
+  0% {
+    scale: 0.1;
+    transform: translateX(-30vw);
+  }
+  50%, 95% {
+    scale: 2;
+    rotate: 360deg;
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0.7;
+  }
+}
+@keyframes rotation {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: -360deg;
+  }
+}
+/*** réservez le menu qui vous convient ***/
+.reserve-menu {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding-top: 1px;
+  padding-bottom: 90px;
+}
+@media only screen and (min-width: 1100px) {
+  .reserve-menu {
+    padding-bottom: 33px;
+  }
+}
+
+.reserve-menu div {
+  font-family: "Roboto";
+}
+.reserve-menu div p {
+  font-size: 1.13rem;
+  font-weight: 300;
+  margin-right: 26px;
+  margin-left: 34px;
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+@media only screen and (min-width: 1100px) {
+  .reserve-menu div p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    height: 46px;
+  }
+}
+.reserve-menu div h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 42px;
+  margin-right: 58px;
+  margin-bottom: 0px;
+  height: 68px;
+}
+@media only screen and (min-width: 1100px) {
+  .reserve-menu div h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    height: auto;
+  }
+}
+.reserve-menu div a {
+  display: inline-block;
+  padding: 13px 18px 13px 18.75px;
+  text-decoration: none;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.reserve-menu div a:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 1px 2px 7px rgba(56, 56, 56, 0.87);
+}
+
+/*** Fonctionnement ***/
+.functioning > div {
+  padding-top: 26px;
+  padding-bottom: 76px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning > div {
+    padding: 0px 180px 50px 180px;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.functioning h2 {
+  padding-top: 15px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning h2 {
+    padding: 50px 180px 25px 180px;
+  }
+}
+
+.functioning_elements, .functioning_items, .functioning_number {
+  display: flex;
+  align-items: first baseline;
+}
+
+.functioning_elements {
+  position: relative;
+  padding-bottom: 25px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning_elements {
+    padding: 0;
+  }
+}
+
+.functioning_number {
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 90%;
+  z-index: 2;
+  margin-left: 20px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning_number {
+    margin-left: 0;
+  }
+}
+.functioning_number p {
+  font-size: 14.18px;
+  padding-top: 3px;
+}
+
+.functioning_items {
+  gap: 27px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding-left: 34px;
+  padding-right: 38px;
+  width: 70%;
+  z-index: 1;
+  margin-right: 20px;
+  margin-left: -12.51px;
+  box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
+  height: 72.38px;
+}
+@media only screen and (min-width: 1100px) {
+  .functioning_items {
+    margin-right: 36.5px;
+  }
+}
+.functioning_items p {
+  font-weight: 500;
+  font-size: 1rem;
+  padding-top: 10px;
+}
+.functioning_items img {
+  width: 18px;
+  height: 18px;
+}
+
+/*** Restaurants ***/
+.restaurants--background {
+  background-color: #F6F6F6;
+  padding-bottom: 66px;
+}
+.restaurants--background h2 {
+  padding-bottom: 22px;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurants--background {
+    padding-bottom: 30px;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-top: 30px;
+  }
+  .restaurants--background h2 {
+    padding-left: 0;
+    padding-bottom: 28px;
+  }
+}
+
+.restaurants, .restaurants_semi {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .restaurants {
+    gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .restaurants_semi {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+.restaurant {
+  height: 251px;
+  width: 90%;
+  border-radius: 15px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.restaurant a {
+  color: black;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurant {
+    width: 100%;
+  }
+}
+
+.restaurant_items img {
+  width: 100%;
+  height: 231px; /*231 taille de base*/
+  top: -57px;
+  position: absolute;
+  object-fit: cover;
+}
+.restaurant_items p {
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 9.63px 6px 9px;
+  border-radius: 3px;
+  width: 17%;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.restaurant_elements .heart-svg {
+  position: absolute;
+  top: 197px;
+  right: 25px;
+  transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke-opacity: 1;
+}
+.restaurant_elements .heart-svg:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+.restaurant_elements .title {
+  font-weight: 700;
+  font-size: 1.13rem;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.restaurant_elements .subtitle {
+  font-weight: 300;
+  font-size: 17px;
+  margin: 0;
+}
+.restaurant_elements .position {
+  position: absolute;
+  bottom: 12px;
+  left: 13px;
+}
+
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: white;
+  font-family: "Roboto";
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+  }
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+/* Colors */
+/* Text configuration */
+/*24px*/
+/*18px*/
+/*16px*/
+/*15px*/
+body {
+  margin: 0;
+  min-width: 340px;
+  background-color: white;
+  font-family: "Roboto";
+}
+@media only screen and (min-width: 1100px) {
+  body {
+    margin: 0;
+  }
+}
+
+h2 {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 21px;
+  margin: 0;
+}
+
+/**** Header ****/
+header {
+  padding-top: 14px;
+}
+
+nav {
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+nav div {
+  text-align: center;
+}
+nav .logo {
+  height: 36px;
+  padding-top: 2px;
+}
+nav a {
+  position: absolute;
+  padding-top: 7px;
+  padding-left: 23px;
+}
+
+/**** Hero Header image ****/
+.restaurant-image {
+  width: 100%;
+}
+.restaurant-image img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurant-image img {
+    height: 383px;
+  }
+}
+
+/**** Restaurant menu ****/
+.restaurant-menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+  top: -36px;
+}
+@media only screen and (min-width: 1100px) {
+  .restaurant-menu {
+    margin-left: 193px;
+    margin-right: 193px;
+    padding-left: 210px;
+    padding-right: 210px;
+  }
+}
+.restaurant-menu .button {
+  display: flex;
+  justify-content: center;
+}
+.restaurant-menu button {
+  border: none;
+  padding: 16px 48px 15px 49px;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
+  margin-top: 13px;
+  margin-bottom: 40px;
+}
+.restaurant-menu button:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
+  box-shadow: 1px 2px 7px rgba(56, 56, 56, 0.87);
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "Shrikhand";
+  font-weight: 400;
+}
+
+.menu_title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 17px;
+  padding-right: 41px;
+  align-items: center;
+}
+@media only screen and (min-width: 1100px) {
+  .menu_title {
+    justify-content: center;
+    gap: 24px;
+    padding-top: 37px;
+  }
+}
+.menu_title .heart-svg {
+  transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
+  fill: url(#gradient);
+  fill-opacity: 0;
+  stroke-opacity: 1;
+}
+.menu_title .heart-svg:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+
+@keyframes slide-in {
+  from {
+    padding-left: 100%;
+    width: 200%;
+  }
+  to {
+    padding-right: 13px;
+  }
+}
+.slide-delay-1 {
+  animation: slide-in 0.75s cubic-bezier(0.45, 0.05, 0.55, 0.95) 100ms;
+}
+
+.slide-delay-2 {
+  animation: slide-in 2s ease-in-out 650ms;
+}
+
+.slide-delay-3 {
+  animation: slide-in 1.2s ease-in 350ms;
+}
+
+.menu {
+  padding: 13px;
+  margin-bottom: 14px;
+}
+.menu > p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  animation: slide-in 2.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+.menu hr {
+  border: 2px solid #99E2D0;
+  width: 40px;
+  position: relative;
+  margin: 0;
+  animation: slide-in 3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.menu_items {
+  background-color: white;
+  border-radius: 15px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 47px;
+  position: relative;
+  box-shadow: 1px 2px 7px rgba(133, 132, 132, 0.87);
+  margin-top: 12px;
+  overflow: hidden;
+}
+.menu_items .title {
+  font-size: 1.13rem;
+  font-weight: 500;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+.menu_items .subtitle {
+  font-size: 0.94rem;
+  font-weight: 300;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.menu_items .price {
+  font-size: 0.94rem;
+  font-weight: 700;
+  position: absolute;
+  right: 13.5px;
+  bottom: -13.5px;
+  padding-bottom: 12px;
+}
+.menu_items .add {
+  background-color: #99E2D0;
+  height: 100%;
+  width: 59px;
+  position: absolute;
+  right: -59px;
+  top: 0px;
+}
+.menu_items .add__circle {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 19.42px;
+  top: 35%;
+}
+.menu_items:active .price, .menu_items:active .add {
+  transform: translateX(-59px);
+  transition: transform 500ms ease-in-out;
+}
+.menu_items:active .title, .menu_items:active .subtitle {
+  transition: padding-right 500ms ease-in-out;
+  padding-right: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=style.css.map */
