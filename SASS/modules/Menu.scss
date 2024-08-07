@@ -51,7 +51,9 @@ nav {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
-    top: -36px;
+    // top: -36px;
+    margin-top: -36px;
+
 
     @media #{$large-up} {
         margin-left: 193px;
