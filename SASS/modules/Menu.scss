@@ -9,7 +9,7 @@ header {
 
 nav {
     padding-top: $padding - 2;
-    padding-bottom: $padding - 1;
+    padding-bottom: $padding - 1; /* enlever padding*/
     // background-color: aquamarine;
 
     & div {
