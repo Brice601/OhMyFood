@@ -3,15 +3,15 @@
     background-color: $color-white;
     margin: 0;
     padding: 0;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 
     & > div {
         display: flex;
@@ -59,19 +59,6 @@
             display: none;
         }
     }
-<<<<<<< HEAD
-=======
-}
-
-@keyframes rotation {
-    from {
-        rotate: 0;
-    }
-
-    to {
-        rotate: -360deg;
-    }
->>>>>>> 278bc27 (chgt transition rotate -> animation rotate)
 }
 
 @keyframes rotation {
@@ -84,28 +71,36 @@
     }
 }
 
+@keyframes rotation {
+    from {
+        rotate: 0;
+    }
+
+    to {
+        rotate: -360deg;
+    }
+}
 
 
-// #loader-animation {
-//         animation: affichage 3s forwards;
-// }
 
-// #content {
-//     animation: affichage 3s reverse forwards;
-// }
+#loader-animation {
+        animation: affichage 3s forwards;
+        z-index: 0;
+}
+
+#content {
+    animation: affichage 3s reverse forwards;
+    animation-delay: 1s;
+}
 
 
-// @keyframes affichage {
-//     0%, 50%{
-//         opacity: 1;
-//         // background-color: red;
-//     }
+@keyframes affichage {
+    0%, 50%{
+        opacity: 1;
+        // background-color: red;
+    }
 
-//     100% {
-//         opacity: 0;
-//     }
-<<<<<<< HEAD
-// }
-=======
-// }
->>>>>>> 23c61bd (mettre en place sass)
+    100% {
+        opacity: 0;
+    }
+}
