@@ -1,27 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "ohmyfood",
-    "version": "1.0.0",
-    "description": "ohmyfood project",
-    "main": "index.html",
-    "scripts": {
-      "sass": "sass --watch SASS/index.scss:css/style.css"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/Brice601/OhMyFood.git"
-    },
-    "author": "Brice dlp",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/Brice601/OhMyFood/issues"
-    },
-    "homepage": "https://github.com/Brice601/OhMyFood#readme",
-    "dependencies": {
-      "sass": "^1.77.8"
-    }
-  }
-=======
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "ohmyfood project",
@@ -43,4 +20,3 @@
     "sass": "^1.77.8"
   }
 }
->>>>>>> 23c61bd (mettre en place sass)

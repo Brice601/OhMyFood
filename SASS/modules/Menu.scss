@@ -8,8 +8,8 @@ header {
 }
 
 nav {
-    padding-top: $padding - 2;
-    padding-bottom: $padding - 1; /* enlever padding*/
+    //padding-top: $padding - 2;
+    //padding-bottom: $padding - 1; /* enlever padding*/
     // background-color: aquamarine;
 
     & div {
@@ -51,8 +51,8 @@ nav {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     position: relative;
-    top: -36px;
-    // margin-top: -36px; 
+    // top: -36px;
+    margin-top: -36px; 
 
 
     @media #{$large-up} {
@@ -85,7 +85,7 @@ nav {
 
 h1 {
     font-size: 28px;
-    font-family: $title-font;
+    font-family: $body-font;
     font-weight: 400;
 }
 

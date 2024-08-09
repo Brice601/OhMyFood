@@ -85,6 +85,7 @@ body {
   min-width: 340px;
   background-color: white;
   font-family: "Roboto";
+  min-height: 100vh;
 }
 @media only screen and (min-width: 1100px) {
   body {
@@ -98,6 +99,12 @@ h2 {
   font-weight: 700;
   padding-top: 21px;
   margin: 0;
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
 }
 
 header {
@@ -115,14 +122,24 @@ header {
 }
 
 .second-nav {
-  background: linear-gradient(to top, rgba(214, 214, 214, 0.158), rgba(163, 160, 160, 0.322));
+  background: linear-gradient(to top, rgba(240, 238, 238, 0.6), rgb(234, 234, 234));
   display: flex;
   flex-direction: row;
   gap: 17px;
   width: 100%;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 5px 5px rgba(112, 112, 112, 0.877);
+  box-shadow: 1px 5px 10px rgba(143, 142, 142, 0.653);
+  /* background: #EAEAEA; */
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 1100px) {
+  .second-nav {
+    background: #EAEAEA;
+    position: none;
+    box-shadow: none;
+  }
 }
 .second-nav img {
   height: 1rem;
@@ -137,6 +154,15 @@ header {
   background-color: white;
   margin: 0;
   padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
 }
 #loader-animation > div {
   display: flex;
@@ -183,6 +209,32 @@ header {
     rotate: -360deg;
   }
 }
+@keyframes rotation {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: -360deg;
+  }
+}
+#loader-animation {
+  animation: affichage 3s forwards;
+  z-index: 0;
+}
+
+#content {
+  animation: affichage 3s reverse forwards;
+  animation-delay: 1s;
+}
+
+@keyframes affichage {
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*** réservez le menu qui vous convient ***/
 .reserve-menu {
   text-align: center;
@@ -216,20 +268,17 @@ header {
   }
 }
 .reserve-menu div h1 {
-  font-size: 1.5rem;
   font-weight: 700;
   margin-left: 42px;
   margin-right: 58px;
-  margin-bottom: 0px;
-  height: 68px;
+  margin-bottom: 18px;
+  margin-top: 39.5px;
 }
 @media only screen and (min-width: 1100px) {
   .reserve-menu div h1 {
     font-size: 40px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 18px;
-    height: auto;
   }
 }
 .reserve-menu div a {
@@ -253,7 +302,7 @@ header {
 /*** Fonctionnement ***/
 .functioning > div {
   padding-top: 26px;
-  padding-bottom: 76px;
+  padding-bottom: 76px; /*mettre à 50px*/
 }
 @media only screen and (min-width: 1100px) {
   .functioning > div {
@@ -314,7 +363,7 @@ header {
   border-radius: 20px;
   padding-left: 34px;
   padding-right: 38px;
-  width: 70%;
+  width: 75%;
   z-index: 1;
   margin-right: 20px;
   margin-left: -12.51px;
@@ -456,6 +505,7 @@ body {
   min-width: 340px;
   background-color: white;
   font-family: "Roboto";
+  min-height: 100vh;
 }
 @media only screen and (min-width: 1100px) {
   body {
@@ -469,6 +519,12 @@ h2 {
   font-weight: 700;
   padding-top: 21px;
   margin: 0;
+}
+
+#content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
 }
 
 /* Colors */
@@ -482,6 +538,7 @@ body {
   min-width: 340px;
   background-color: white;
   font-family: "Roboto";
+  min-height: 100vh;
 }
 @media only screen and (min-width: 1100px) {
   body {
@@ -497,15 +554,17 @@ h2 {
   margin: 0;
 }
 
+#content {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1;
+}
+
 /**** Header ****/
 header {
   padding-top: 14px;
 }
 
-nav {
-  padding-top: 12px;
-  padding-bottom: 13px;
-}
 nav div {
   text-align: center;
 }
@@ -540,7 +599,7 @@ nav a {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   position: relative;
-  top: -36px;
+  margin-top: -36px;
 }
 @media only screen and (min-width: 1100px) {
   .restaurant-menu {
@@ -573,7 +632,7 @@ nav a {
 
 h1 {
   font-size: 28px;
-  font-family: "Shrikhand";
+  font-family: "Roboto";
   font-weight: 400;
 }
 
