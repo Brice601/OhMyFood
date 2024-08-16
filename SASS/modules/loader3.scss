@@ -36,19 +36,17 @@
     animation: loader-anim 3s ease-in-out forwards;
 
     &__items {
-       animation: rotation 2s;
+       animation: rotation 3s;
     }
 }
 
 @keyframes loader-anim {
     0% {
-        scale: 0.1;
-        transform: translateX(-30vw);
+        transform: scale(0.1) translateX(30vw);
     }
 
-    50%, 95% {
-        scale: 2;
-        rotate: 360deg;
+    50%, 85% {
+        transform: scale(2);
         opacity: 1;
     }
 
@@ -60,21 +58,11 @@
 
 @keyframes rotation {
     from {
-        rotate: 0;
+        transform: rotate(0);
     }
 
     to {
-        rotate: -360deg;
-    }
-}
-
-@keyframes rotation {
-    from {
-        rotate: 0;
-    }
-
-    to {
-        rotate: -360deg;
+        transform: rotate(-360deg);
     }
 }
 
@@ -87,14 +75,13 @@
 
 #content {
     animation: affichage 3s reverse forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 
 @keyframes affichage {
     0%, 50%{
         opacity: 1;
-        // background-color: red;
     }
 
     100% {

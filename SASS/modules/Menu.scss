@@ -194,9 +194,9 @@ h1 {
         padding-bottom: 5px;
         // background-color: violet;
         margin: 0;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     & .subtitle {
@@ -205,9 +205,9 @@ h1 {
         padding-bottom: 12px;
         // background-color: rosybrown;
         margin: 0;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     & .price {
@@ -247,9 +247,9 @@ h1 {
         & .title, .subtitle {
             transition: padding-right 500ms ease-in-out;
             padding-right: 70px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
         }
         
     }

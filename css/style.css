@@ -183,17 +183,15 @@ header {
   animation: loader-anim 3s ease-in-out forwards;
 }
 .anim__items {
-  animation: rotation 2s;
+  animation: rotation 3s;
 }
 
 @keyframes loader-anim {
   0% {
-    scale: 0.1;
-    transform: translateX(-30vw);
+    transform: scale(0.1) translateX(30vw);
   }
-  50%, 95% {
-    scale: 2;
-    rotate: 360deg;
+  50%, 85% {
+    transform: scale(2);
     opacity: 1;
   }
   100% {
@@ -203,18 +201,10 @@ header {
 }
 @keyframes rotation {
   from {
-    rotate: 0;
+    transform: rotate(0);
   }
   to {
-    rotate: -360deg;
-  }
-}
-@keyframes rotation {
-  from {
-    rotate: 0;
-  }
-  to {
-    rotate: -360deg;
+    transform: rotate(-360deg);
   }
 }
 #loader-animation {
@@ -224,7 +214,7 @@ header {
 
 #content {
   animation: affichage 3s reverse forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes affichage {
@@ -719,12 +709,18 @@ h1 {
   padding-top: 12px;
   padding-bottom: 5px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_items .subtitle {
   font-size: 0.94rem;
   font-weight: 300;
   padding-bottom: 12px;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu_items .price {
   font-size: 0.94rem;
@@ -749,16 +745,13 @@ h1 {
   right: 19.42px;
   top: 35%;
 }
-.menu_items:active .price, .menu_items:active .add {
+.menu_items:hover .price, .menu_items:hover .add {
   transform: translateX(-59px);
   transition: transform 500ms ease-in-out;
 }
-.menu_items:active .title, .menu_items:active .subtitle {
+.menu_items:hover .title, .menu_items:hover .subtitle {
   transition: padding-right 500ms ease-in-out;
   padding-right: 70px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */
