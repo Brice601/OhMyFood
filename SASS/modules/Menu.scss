@@ -109,7 +109,7 @@ h1 {
         // top: 197px;
         // right: 25px;
         transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in ;
-        fill: url(#gradient);
+        fill: url('#gradient');
         fill-opacity: 0;
         stroke-opacity: 1;
 
@@ -120,6 +120,7 @@ h1 {
 
     }
 }
+
 
 // @for $i from 1 through 3 {
 //     .slide-delay-#{$i} {

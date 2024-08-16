@@ -459,9 +459,20 @@ header {
   top: 197px;
   right: 25px;
   transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
-  fill: url(#gradient);
   fill-opacity: 0;
   stroke-opacity: 1;
+}
+.restaurant_elements .heart-svg:nth-child(1) {
+  fill: url("#gradient-1");
+}
+.restaurant_elements .heart-svg:nth-child(2) {
+  fill: url("#gradient-2");
+}
+.restaurant_elements .heart-svg:nth-child(3) {
+  fill: url("#gradient-3");
+}
+.restaurant_elements .heart-svg:nth-child(4) {
+  fill: url("#gradient-4");
 }
 .restaurant_elements .heart-svg:hover {
   fill-opacity: 1;
@@ -642,7 +653,7 @@ h1 {
 }
 .menu_title .heart-svg {
   transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in;
-  fill: url(#gradient);
+  fill: url("#gradient");
   fill-opacity: 0;
   stroke-opacity: 1;
 }

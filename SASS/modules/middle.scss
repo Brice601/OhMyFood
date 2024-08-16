@@ -269,9 +269,21 @@
         top: 197px;
         right: 25px;
         transition: fill-opacity 400ms ease-in-out, stroke-opacity 400ms ease-in ;
-        fill: url(#gradient);
         fill-opacity: 0;
         stroke-opacity: 1;
+
+        &:nth-child(1){
+            fill: url('#gradient-1');
+        }
+        &:nth-child(2){
+            fill: url('#gradient-2');
+        }
+        &:nth-child(3){
+            fill: url('#gradient-3');
+        }
+        &:nth-child(4){
+            fill: url('#gradient-4');
+        }
 
         &:hover {
             fill-opacity: 1;
